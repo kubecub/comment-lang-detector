@@ -1,0 +1,29 @@
+# Copyright © 2024 KubeCub open source community. All rights reserved.
+# Licensed under the MIT License (the "License");
+# you may not use this file except in compliance with the License.
+
+name: Setup
+
+on: [push, pull_request]
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Install go-gitlint
+      run: |
+        go install github.com/llorllale/go-gitlint/cmd/go-gitlint@latest
+        mkdir -p ./_output/tools/
+        cp $(go env GOPATH)/bin/go-gitlint ./_output/tools/
+
+    - name: Setup Git hooks
+      run: |
+        cp scripts/githooks/commit-msg .git/hooks/
+        cp scripts/githooks/pre-commit .git/hooks/
+
+    - name: Add files
+      run: git add .

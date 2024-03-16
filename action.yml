@@ -1,0 +1,21 @@
+# Copyright © 2024 KubeCub open source community. All rights reserved.
+# Licensed under the MIT License (the "License");
+# you may not use this file except in compliance with the License.
+
+name: 'Code Language Detector'
+description: 'Detects specified languages in comments within code files.'
+inputs:
+  config-path:
+    description: 'Path to the configuration file.'
+    required: true
+    default: '.github/code-language-detector.yml'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.config-path }}
+
+branding:
+  icon: tool
+  color: blue

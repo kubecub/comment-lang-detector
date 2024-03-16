@@ -1,0 +1,13 @@
+FROM golang AS builder
+
+WORKDIR /app
+
+ENV GOPROXY=https://goproxy.cn
+
+COPY . /app/
+
+RUN cd /app; go build -o _output/bin/cld cmd/cld/main.go
+
+FROM scratch
+COPY --from=builder /app/_output/bin/cld /app
+ENTRYPOINT ["/app/cld --help"]

@@ -1,0 +1,18 @@
+# Copyright © 2024 KubeCub open source community. All rights reserved.
+# Licensed under the MIT License (the "License");
+# you may not use this file except in compliance with the License.
+
+name: Check for typos
+
+on: [push, pull_request]
+
+jobs:
+  check_typos:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Check for typos
+      run: ./tools/typos ./CONTRIBUTING.md ./README.md
+      working-directory: ./
+

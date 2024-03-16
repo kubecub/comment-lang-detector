@@ -1,0 +1,46 @@
+# Copyright © 2023 KubeCub open source community. All rights reserved.
+# Licensed under the MIT License (the "License");
+# you may not use this file except in compliance with the License.
+
+name: Daily Build and Push
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "0 8 * * *"
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Go environment
+        uses: actions/setup-go@v2
+        with:
+          go-version: 1.18
+
+      - name: Set up Git
+        run: |
+          git config --global user.name "Your Name"
+          git config --global user.email "your-email@example.com"
+
+      - name: Build
+        run: make build
+
+      - name: Set environment variable
+        run: echo "GITHUB_TOKEN=${{ secrets.BOT_GITHUB_TOKEN }}" >> $GITHUB_ENV
+
+      - name: Execute script
+        run: |
+          export GITHUB_TOKEN="${{ secrets.BOT_GITHUB_TOKEN }}"
+          ./script.sh
+
+      - name: Commit and push changes
+        run: |
+          git add .
+          git commit -m "Daily build"
+          git push
