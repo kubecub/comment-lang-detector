@@ -1,11 +1,38 @@
-# comment-lang-detector
+<h1 align="center" style="border-bottom: none">
+    <b>
+        <a href="https://nsddd.top">comment-lang-detector</a><br>
+    </b>
+</h1>
+<h3 align="center" style="border-bottom: none">
+      ⭐️  sync labels between repos and org.  ⭐️ <br>
+<h3>
+
+
+<p align=center>
+<a href="https://goreportcard.com/report/github.com/kubecub/comment-lang-detector"><img src="https://goreportcard.com/badge/github.com/kubecub/comment-lang-detector" alt="A+"></a>
+<a href="https://github.com/kubecub/comment-lang-detector/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%22good+first+issue%22"><img src="https://img.shields.io/github/issues/kubecub/comment-lang-detector/good%20first%20issue?logo=%22github%22" alt="good first"></a>
+<a href="https://github.com/kubecub/comment-lang-detector"><img src="https://img.shields.io/github/stars/kubecub/comment-lang-detector.svg?style=flat&logo=github&colorB=deeppink&label=stars"></a>
+<a href="https://join.slack.com/t/kubecub/shared_invite/zt-1se0k2bae-lkYzz0_T~BYh3rjkvlcUqQ"><img src="https://img.shields.io/badge/Slack-100%2B-blueviolet?logo=slack&amp;logoColor=white"></a>
+<a href="https://github.com/kubecub/comment-lang-detector/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-green"></a>
+<a href="https://golang.org/"><img src="https://img.shields.io/badge/Language-Go-blue.svg"></a>
+</p>
+
+
+<p align="center">
+    <a href="./README.md"><b>English</b></a> •
+    <a href="./README_zh-CN.md"><b>中文</b></a>
+</p>
+
+</p>
+
+----
+
+## Using the Comment Language Detector GitHub Action
 
 A GitHub Action for detecting specified languages (e.g., Chinese or Japanese) in comments within code files across multiple programming languages (YAML, Go, Java, Rust). Ideal for projects aiming to adhere to internationalization standards or maintain language-specific coding guidelines.
 
 The Comment Language Detector (CLD) is a powerful tool designed to automate the detection of specified languages within code comments across your project's repository. This tool is particularly useful for teams seeking to maintain consistency in code documentation languages or for projects that require language-specific comment checks as part of their quality assurance processes.
 
-
-## Using the Comment Language Detector GitHub Action
 
 To leverage the Comment Language Detector in your GitHub Actions workflow, you have two main approaches for installation:
 
@@ -147,6 +174,87 @@ The Code Language Detector (CLD) Action offers a flexible approach to configurat
 - **Customizing the Configuration Path**: We recommend using the command-line argument or environment variable methods for specifying the configuration path when you have multiple workflows or need to adhere to different coding standards across projects.
 
 This configuration strategy is designed to maximize flexibility and ease of use, ensuring that users can integrate the CLD Action into their workflows efficiently and effectively.
+
+
+## Local Usage Guide for Comment Language Detector
+
+The Comment Language Detector (CLD) offers a convenient way to detect specific languages within code comments across your projects. This guide will walk you through the steps for setting up and using CLD locally on your machine.
+
+### Step 1: Download the Latest Release
+
+1. Visit the [releases page](https://github.com/kubecub/comment-lang-detector/releases) of the Comment Language Detector on GitHub.
+2. Download the latest release suitable for your operating system (Windows, macOS, Linux).
+
+### Step 2: Install the Binary
+
+After downloading, you'll need to make the binary executable and move it to a location in your system's PATH to make it easily accessible from the command line.
+
+#### For Linux and macOS:
+
+1. Open a terminal.
+2. Navigate to the download location.
+3. Make the binary executable with the following command:
+
+```bash
+chmod +x cld-linux // Use cld-macos if you're on macOS
+```
+
+4. Move the binary to a location in your PATH. A common choice is `/usr/local/bin`:
+
+```bash
+sudo mv cld-linux /usr/local/bin/cld // Use cld-macos if you're on macOS
+```
+
+#### For Windows:
+
+- Extract the downloaded ZIP file.
+- Move the `cld.exe` to a directory that is part of your system's PATH.
+
+### Step 3: Set Up Environment Variable (Optional)
+
+You can configure CLD using environment variables or a configuration file. To set up an environment variable for the configuration path:
+
+#### For Linux and macOS:
+
+Open your `.bashrc`, `.zshrc`, or equivalent shell configuration file and add:
+
+```bash
+export CLD_CONFIG_PATH="/path/to/your/config.yaml"
+```
+
+Replace `"/path/to/your/config.yaml"` with the actual path to your configuration file. Then, reload your shell configuration with `source ~/.bashrc` (or equivalent).
+
+#### For Windows:
+
+- Open the Start Search, type in "env", and choose "Edit the system environment variables."
+- In the System Properties window, click on the "Environment Variables..." button.
+- In the Environment Variables window, click "New" under the "User variables" section.
+- Set the variable name to `CLD_CONFIG_PATH` and the variable value to the path of your configuration file.
+
+### Step 4: Create a Configuration File
+
+Create a `config.yaml` file in your project directory (or the location specified in the `CLD_CONFIG_PATH` environment variable) with the following structure:
+
+```yaml
+directory: ./
+file_types:
+  - .go
+  - .yaml
+  - .yml
+languages:
+  - Chinese
+```
+
+### Step 5: Running CLD
+
+With CLD installed and configured, you can now run it to detect specified languages within code comments. Open a terminal or command prompt, navigate to your project directory, and execute:
+
+```bash
+cld
+```
+
+If you've set the `CLD_CONFIG_PATH` environment variable, CLD will use the specified configuration file. Otherwise, ensure you have a `config.yaml` in your project directory or specify the configuration file path directly when running CLD.
+
 
 ## user
 
