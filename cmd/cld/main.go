@@ -26,6 +26,7 @@ func main() {
 	if err != nil {
 		log.Fatalf("Error parsing config: %v", err)
 	}
+	// sa f打的
 
 	err = checker.WalkDirAndCheckComments(cfg)
 	if err != nil {

@@ -2,10 +2,98 @@
 
 A GitHub Action for detecting specified languages (e.g., Chinese or Japanese) in comments within code files across multiple programming languages (YAML, Go, Java, Rust). Ideal for projects aiming to adhere to internationalization standards or maintain language-specific coding guidelines.
 
-## Use
+The Comment Language Detector (CLD) is a powerful tool designed to automate the detection of specified languages within code comments across your project's repository. This tool is particularly useful for teams seeking to maintain consistency in code documentation languages or for projects that require language-specific comment checks as part of their quality assurance processes.
 
 
+## Using the Comment Language Detector GitHub Action
 
+To leverage the Comment Language Detector in your GitHub Actions workflow, you have two main approaches for installation:
+
+### Latest Version Installation
+
+For users looking to utilize the most recent features and updates, installing the latest version is recommended:
+
+```shell
+go install github.com/kubecub/comment-lang-detector/cmd/cld@latest
+```
+
+### Specific Version Installation
+
+For those who prefer stability over cutting-edge changes, specifying a version ensures consistent behavior across runs:
+
+```shell
+go install github.com/kubecub/comment-lang-detector/cmd/cld@v0.1.1
+```
+
+After installation, you can set an environment variable to indicate the configuration file path:
+
+```shell
+export CLD_CONFIG_PATH="./config.yaml"
+```
+
+### Usage
+
+The CLD tool is executed by simply calling:
+
+```shell
+cld
+```
+
+This command will check for comments in the specified languages according to the configurations set in your `.github/code-language-detector.yml` or `config.yaml` file.
+
+### Configuration
+
+A crucial step in utilizing the CLD tool is to correctly set up your configuration file. The default configuration file location is `.github/code-language-detector.yml`. Here is an example configuration:
+
+```yaml
+directory: ./
+file_types:
+  - .go
+  - .yaml
+  - .yml
+languages:
+  - Chinese
+```
+
+This configuration instructs the CLD to scan the root directory (`./`) for files with `.go`, `.yaml`, and `.yml` extensions, specifically looking for comments written in Chinese.
+
+### Integrating with GitHub Actions
+
+To integrate the CLD tool with GitHub Actions, follow these steps to create a custom action within your repository:
+
+1. **Create a Workflow File**: Navigate to your repository's `.github/workflows` directory and create a new YAML file, for example, `language-check.yml`.
+
+2. **Define the Workflow**: Inside your YAML file, define the steps to install CLD, set the configuration file, and run the detector. Here's a sample workflow:
+
+```yaml
+name: Language Check Workflow
+
+on: [push, pull_request]
+
+jobs:
+  comment-language-detector:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: '^1.20'
+
+      - name: Install CLD
+        run: |
+          go install github.com/kubecub/comment-lang-detector/cmd/cld@latest
+      - name: Run Comment Language Detector
+        run: cld
+```
+
+This workflow triggers on both push events and pull requests. It checks out the code, sets up the Go environment, installs the Comment Language Detector, and runs it against the codebase according to the specified configuration.
+
+### Conclusion
+
+The Comment Language Detector GitHub Action provides a robust solution for automatically ensuring that code comments adhere to specified language requirements. By integrating this tool into your GitHub Actions workflow, you can enhance code quality and maintain consistency across your project's documentation efforts.
 
 
 ## Configuration Strategy for Code Language Detector
