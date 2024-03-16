@@ -1,0 +1,33 @@
+# Copyright © 2024 KubeCub open source community. All rights reserved.
+# Licensed under the MIT License (the "License");
+# you may not use this file except in compliance with the License.
+
+name: Execute script and push changes
+
+on:
+  push:
+  schedule:
+    - cron: '0 * * * *' # Runs every hour
+
+env:
+  GITHUB_TOKEN: ${{ secrets.REDBOT_GITHUB_TOKEN }} # Specify your token here
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0  # Fetch all history for all branches and tags.
+
+    - name: Execute script
+      run: |
+        chmod +x ./script.sh
+        ./script.sh
+
+    - name: Commit and push if it has changed 
+      run: |
+        git config --global user.email "3293172751ysy@gmail.com"
+        git config --global user.name "openimbot"
+        git diff --quiet && git diff --staged --quiet || (git add .; git commit -m "Auto update from Github Action"; git push origin main;)

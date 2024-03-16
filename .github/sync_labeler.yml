@@ -1,0 +1,1440 @@
+# Copyright © 2023 KubeCub open source community. All rights reserved.
+# Licensed under the MIT License (the "License");
+# you may not use this file except in compliance with the License.
+
+- color: f9d0c4
+  default: false
+  description: ¯\\\_(ツ)_/¯
+  id: 682916056
+  name: ¯\_(ツ)_/¯
+  node_id: MDU6TGFiZWw2ODI5MTYwNTY=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/%C2%AF%5C_(%E3%83%84)_/%C2%AF
+- color: e11d21
+  default: false
+  description: Categorizes an issue or PR as actively needing an API review.
+  id: 1242861616
+  name: api-review
+  node_id: MDU6TGFiZWwxMjQyODYxNjE2
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/api-review
+- color: 0ffa16
+  default: false
+  description: Indicates a PR has been approved by an approver from all required OWNERS
+    files.
+  id: 414883982
+  name: approved
+  node_id: MDU6TGFiZWw0MTQ4ODM5ODI=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/approved
+- color: 0052cc
+  default: false
+  description: Indicates an issue on admin area.
+  id: 286411323
+  name: area/admin
+  node_id: MDU6TGFiZWwyODY0MTEzMjM=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/admin
+- color: 0052cc
+  default: false
+  description: ""
+  id: 486445796
+  name: area/admission-control
+  node_id: MDU6TGFiZWw0ODY0NDU3OTY=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/admission-control
+- color: 0052cc
+  default: false
+  description: Indicates an issue on api area.
+  id: 125063986
+  name: area/api
+  node_id: MDU6TGFiZWwxMjUwNjM5ODY=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/api
+- color: 0052cc
+  default: false
+  description: ""
+  id: 136601536
+  name: area/apiserver
+  node_id: MDU6TGFiZWwxMzY2MDE1MzY=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/apiserver
+- color: 0052cc
+  default: false
+  description: ""
+  id: 126701924
+  name: area/app-lifecycle
+  node_id: MDU6TGFiZWwxMjY3MDE5MjQ=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/app-lifecycle
+- color: 0052cc
+  default: false
+  description: Issues or PRs related to the hosting of release artifacts for subprojects
+  id: 2554671205
+  name: area/artifacts
+  node_id: MDU6TGFiZWwyNTU0NjcxMjA1
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/artifacts
+- color: 0052cc
+  default: false
+  description: ""
+  id: 680704582
+  name: area/audit
+  node_id: MDU6TGFiZWw2ODA3MDQ1ODI=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/audit
+- color: 0052cc
+  default: false
+  description: ""
+  id: 136892195
+  name: area/batch
+  node_id: MDU6TGFiZWwxMzY4OTIxOTU=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/batch
+- color: 0052cc
+  default: false
+  description: ""
+  id: 125299793
+  name: area/build-release
+  node_id: MDU6TGFiZWwxMjUyOTk3OTM=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/build-release
+- color: 0052cc
+  default: false
+  description: ""
+  id: 148734898
+  name: area/cadvisor
+  node_id: MDU6TGFiZWwxNDg3MzQ4OTg=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/cadvisor
+- color: 0052cc
+  default: false
+  description: ""
+  id: 127257422
+  name: area/client-libraries
+  node_id: MDU6TGFiZWwxMjcyNTc0MjI=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/client-libraries
+- color: 0052cc
+  default: false
+  description: ""
+  id: 154660912
+  name: area/cloudprovider
+  node_id: MDU6TGFiZWwxNTQ2NjA5MTI=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/cloudprovider
+- color: 0052cc
+  default: false
+  description: ""
+  id: 732478758
+  name: area/code-generation
+  node_id: MDU6TGFiZWw3MzI0Nzg3NTg=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/code-generation
+- color: 0052cc
+  default: false
+  description: Issues or PRs related to kubernetes code organization
+  id: 1315281643
+  name: area/code-organization
+  node_id: MDU6TGFiZWwxMzE1MjgxNjQz
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/code-organization
+- color: 0052cc
+  default: false
+  description: Issues or PRs that should potentially be discussed in a Kubernetes
+    community meeting.
+  id: 4582490420
+  name: area/community-meeting
+  node_id: LA_kwDOAToIks8AAAABESNBNA
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/community-meeting
+- color: 0052cc
+  default: false
+  description: ""
+  id: 433825251
+  name: area/configmap-api
+  node_id: MDU6TGFiZWw0MzM4MjUyNTE=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/configmap-api
+- color: 0052cc
+  default: false
+  description: Issues or PRs related to kubernetes conformance tests
+  id: 717986501
+  name: area/conformance
+  node_id: MDU6TGFiZWw3MTc5ODY1MDE=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/conformance
+- color: 0052cc
+  default: false
+  description: ""
+  id: 136601472
+  name: area/controller-manager
+  node_id: MDU6TGFiZWwxMzY2MDE0NzI=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/controller-manager
+- color: 0052cc
+  default: false
+  description: ""
+  id: 556590057
+  name: area/custom-resources
+  node_id: MDU6TGFiZWw1NTY1OTAwNTc=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/custom-resources
+- color: 0052cc
+  default: false
+  description: ""
+  id: 496768026
+  name: area/declarative-configuration
+  node_id: MDU6TGFiZWw0OTY3NjgwMjY=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/declarative-configuration
+- color: 0052cc
+  default: false
+  description: Issues or PRs related to deflaking kubernetes tests
+  id: 1180678886
+  name: area/deflake
+  node_id: MDU6TGFiZWwxMTgwNjc4ODg2
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/deflake
+- color: 0052cc
+  default: false
+  description: Issues or PRs related to dependency changes
+  id: 1305786977
+  name: area/dependency
+  node_id: MDU6TGFiZWwxMzA1Nzg2OTc3
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/dependency
+- color: 0052cc
+  default: false
+  description: ""
+  id: 390273825
+  name: area/dns
+  node_id: MDU6TGFiZWwzOTAyNzM4MjU=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/dns
+- color: 0052cc
+  default: false
+  description: ""
+  id: 116712229
+  name: area/docker
+  node_id: MDU6TGFiZWwxMTY3MTIyMjk=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/docker
+- color: 0052cc
+  default: false
+  description: ""
+  id: 130978978
+  name: area/downward-api
+  node_id: MDU6TGFiZWwxMzA5Nzg5Nzg=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/downward-api
+- color: 0052cc
+  default: false
+  description: Issues or PRs related to refactoring the kubernetes e2e test framework
+  id: 1285569325
+  name: area/e2e-test-framework
+  node_id: MDU6TGFiZWwxMjg1NTY5MzI1
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/e2e-test-framework
+- color: 0052cc
+  default: false
+  description: ""
+  id: 335282747
+  name: area/ecosystem
+  node_id: MDU6TGFiZWwzMzUyODI3NDc=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/ecosystem
+- color: 0052cc
+  default: false
+  description: ""
+  id: 127257343
+  name: area/etcd
+  node_id: MDU6TGFiZWwxMjcyNTczNDM=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/etcd
+- color: 0052cc
+  default: false
+  description: ""
+  id: 134675059
+  name: area/example
+  node_id: MDU6TGFiZWwxMzQ2NzUwNTk=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/example
+- color: 0052cc
+  default: false
+  description: ""
+  id: 358362557
+  name: area/example/cassandra
+  node_id: MDU6TGFiZWwzNTgzNjI1NTc=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/example/cassandra
+- color: 0052cc
+  default: false
+  description: ""
+  id: 138151954
+  name: area/extensibility
+  node_id: MDU6TGFiZWwxMzgxNTE5NTQ=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/extensibility
+- color: 0052cc
+  default: false
+  description: ""
+  id: 715868252
+  name: area/federation
+  node_id: MDU6TGFiZWw3MTU4NjgyNTI=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/federation
+- color: 0052cc
+  default: false
+  description: ""
+  id: 136908839
+  name: area/HA
+  node_id: MDU6TGFiZWwxMzY5MDg4Mzk=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/HA
+- color: 0052cc
+  default: false
+  description: ""
+  id: 644163893
+  name: area/hw-accelerators
+  node_id: MDU6TGFiZWw2NDQxNjM4OTM=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/hw-accelerators
+- color: 0052cc
+  default: false
+  description: ""
+  id: 135360517
+  name: area/images-registry
+  node_id: MDU6TGFiZWwxMzUzNjA1MTc=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/images-registry
+- color: 0052cc
+  default: false
+  description: ""
+  id: 500254090
+  name: area/ingress
+  node_id: MDU6TGFiZWw1MDAyNTQwOTA=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/ingress
+- color: 0052cc
+  default: false
+  description: ""
+  id: 125010631
+  name: area/introspection
+  node_id: MDU6TGFiZWwxMjUwMTA2MzE=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/introspection
+- color: 0052cc
+  default: false
+  description: ""
+  id: 608460743
+  name: area/ipv6
+  node_id: MDU6TGFiZWw2MDg0NjA3NDM=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/ipv6
+- color: 0052cc
+  default: false
+  description: ""
+  id: 755527763
+  name: area/ipvs
+  node_id: MDU6TGFiZWw3NTU1Mjc3NjM=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/ipvs
+- color: 0052cc
+  default: false
+  description: ""
+  id: 125550324
+  name: area/isolation
+  node_id: MDU6TGFiZWwxMjU1NTAzMjQ=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/isolation
+- color: 0052cc
+  default: false
+  description: ""
+  id: 128716589
+  name: area/kube-proxy
+  node_id: MDU6TGFiZWwxMjg3MTY1ODk=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/kube-proxy
+- color: 0052cc
+  default: false
+  description: ""
+  id: 451459590
+  name: area/kubeadm
+  node_id: MDU6TGFiZWw0NTE0NTk1OTA=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/kubeadm
+- color: 0052cc
+  default: false
+  description: ""
+  id: 138247961
+  name: area/kubectl
+  node_id: MDU6TGFiZWwxMzgyNDc5NjE=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/kubectl
+- color: 0052cc
+  default: false
+  description: ""
+  id: 116719829
+  name: area/kubelet
+  node_id: MDU6TGFiZWwxMTY3MTk4Mjk=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/kubelet
+- color: 0052cc
+  default: false
+  description: ""
+  id: 134645591
+  name: area/kubelet-api
+  node_id: MDU6TGFiZWwxMzQ2NDU1OTE=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/kubelet-api
+- color: 0052cc
+  default: false
+  description: ""
+  id: 148734819
+  name: area/logging
+  node_id: MDU6TGFiZWwxNDg3MzQ4MTk=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/logging
+- color: 0052cc
+  default: false
+  description: ""
+  id: 148734755
+  name: area/monitoring
+  node_id: MDU6TGFiZWwxNDg3MzQ3NTU=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/monitoring
+- color: 0052cc
+  default: false
+  description: Issues or PRs related to Network Policy subproject
+  id: 2873200929
+  name: area/network-policy
+  node_id: MDU6TGFiZWwyODczMjAwOTI5
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/network-policy
+- color: 0052cc
+  default: false
+  description: ""
+  id: 381925990
+  name: area/node-e2e
+  node_id: MDU6TGFiZWwzODE5MjU5OTA=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/node-e2e
+- color: 0052cc
+  default: false
+  description: ""
+  id: 567844235
+  name: area/node-lifecycle
+  node_id: MDU6TGFiZWw1Njc4NDQyMzU=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/node-lifecycle
+- color: 0052cc
+  default: false
+  description: ""
+  id: 140091046
+  name: area/nodecontroller
+  node_id: MDU6TGFiZWwxNDAwOTEwNDY=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/nodecontroller
+- color: d4c5f9
+  default: false
+  description: ""
+  id: 134646924
+  name: area/os/coreos
+  node_id: MDU6TGFiZWwxMzQ2NDY5MjQ=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/os/coreos
+- color: d4c5f9
+  default: false
+  description: ""
+  id: 134646888
+  name: area/os/fedora
+  node_id: MDU6TGFiZWwxMzQ2NDY4ODg=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/os/fedora
+- color: d4c5f9
+  default: false
+  description: ""
+  id: 130317730
+  name: area/os/ubuntu
+  node_id: MDU6TGFiZWwxMzAzMTc3MzA=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/os/ubuntu
+- color: d4c5f9
+  default: false
+  description: ""
+  id: 134646230
+  name: area/platform/gce
+  node_id: MDU6TGFiZWwxMzQ2NDYyMzA=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/platform/gce
+- color: d4c5f9
+  default: false
+  description: ""
+  id: 189591106
+  name: area/platform/mesos
+  node_id: MDU6TGFiZWwxODk1OTExMDY=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/platform/mesos
+- color: d4c5f9
+  default: false
+  description: ""
+  id: 134646415
+  name: area/platform/vagrant
+  node_id: MDU6TGFiZWwxMzQ2NDY0MTU=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/platform/vagrant
+- color: 0052cc
+  default: false
+  description: Issues or PRs related to aws provider
+  id: 852130657
+  name: area/provider/aws
+  node_id: MDU6TGFiZWw4NTIxMzA2NTc=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/provider/aws
+- color: 0052cc
+  default: false
+  description: Issues or PRs related to azure provider
+  id: 852130786
+  name: area/provider/azure
+  node_id: MDU6TGFiZWw4NTIxMzA3ODY=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/provider/azure
+- color: 0052cc
+  default: false
+  description: Issues or PRs related to digitalocean provider
+  id: 1946559194
+  name: area/provider/digitalocean
+  node_id: MDU6TGFiZWwxOTQ2NTU5MTk0
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/provider/digitalocean
+- color: 0052cc
+  default: false
+  description: Issues or PRs related to gcp provider
+  id: 158907408
+  name: area/provider/gcp
+  node_id: MDU6TGFiZWwxNTg5MDc0MDg=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/provider/gcp
+- color: 0052cc
+  default: false
+  description: Issues or PRs related to ibmcloud provider
+  id: 884249241
+  name: area/provider/ibmcloud
+  node_id: MDU6TGFiZWw4ODQyNDkyNDE=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/provider/ibmcloud
+- color: 0052cc
+  default: false
+  description: Issues or PRs related to openstack provider
+  id: 239914558
+  name: area/provider/openstack
+  node_id: MDU6TGFiZWwyMzk5MTQ1NTg=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/provider/openstack
+- color: 0052cc
+  default: false
+  description: Issues or PRs related to vmware provider
+  id: 874113778
+  name: area/provider/vmware
+  node_id: MDU6TGFiZWw4NzQxMTM3Nzg=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/provider/vmware
+- color: 0052cc
+  default: false
+  description: Issues or PRs related to the Release Engineering subproject
+  id: 268190668
+  name: area/release-eng
+  node_id: MDU6TGFiZWwyNjgxOTA2Njg=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/release-eng
+- color: 0052cc
+  default: false
+  description: ""
+  id: 159151142
+  name: area/reliability
+  node_id: MDU6TGFiZWwxNTkxNTExNDI=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/reliability
+- color: 0052cc
+  default: false
+  description: ""
+  id: 203010486
+  name: area/rkt
+  node_id: MDU6TGFiZWwyMDMwMTA0ODY=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/rkt
+- color: 0052cc
+  default: false
+  description: ""
+  id: 483309897
+  name: area/secret-api
+  node_id: MDU6TGFiZWw0ODMzMDk4OTc=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/secret-api
+- color: d93f0b
+  default: false
+  description: ""
+  id: 116712923
+  name: area/security
+  node_id: MDU6TGFiZWwxMTY3MTI5MjM=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/security
+- color: 0052cc
+  default: false
+  description: Issues or PRs involving stable metrics
+  id: 3967150925
+  name: area/stable-metrics
+  node_id: LA_kwDOAToIks7sdetN
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/stable-metrics
+- color: 0052cc
+  default: false
+  description: ""
+  id: 353400216
+  name: area/stateful-apps
+  node_id: MDU6TGFiZWwzNTM0MDAyMTY=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/stateful-apps
+- color: 0052cc
+  default: false
+  description: ""
+  id: 254871849
+  name: area/swagger
+  node_id: MDU6TGFiZWwyNTQ4NzE4NDk=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/swagger
+- color: 0052cc
+  default: false
+  description: ""
+  id: 269078649
+  name: area/system-requirement
+  node_id: MDU6TGFiZWwyNjkwNzg2NDk=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/system-requirement
+- color: 0052cc
+  default: false
+  description: ""
+  id: 463533491
+  name: area/teardown
+  node_id: MDU6TGFiZWw0NjM1MzM0OTE=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/teardown
+- color: 0052cc
+  default: false
+  description: ""
+  id: 105152717
+  name: area/test
+  node_id: MDU6TGFiZWwxMDUxNTI3MTc=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/test
+- color: 0052cc
+  default: false
+  description: ""
+  id: 178071252
+  name: area/test-infra
+  node_id: MDU6TGFiZWwxNzgwNzEyNTI=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/test-infra
+- color: 0052cc
+  default: false
+  description: ""
+  id: 136601677
+  name: area/ui
+  node_id: MDU6TGFiZWwxMzY2MDE2Nzc=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/ui
+- color: 0052cc
+  default: false
+  description: ""
+  id: 192801498
+  name: area/upgrade
+  node_id: MDU6TGFiZWwxOTI4MDE0OTg=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/upgrade
+- color: 0052cc
+  default: false
+  description: ""
+  id: 134645162
+  name: area/usability
+  node_id: MDU6TGFiZWwxMzQ2NDUxNjI=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/usability
+- color: 0052cc
+  default: false
+  description: ""
+  id: 483268583
+  name: area/workload-api/cronjob
+  node_id: MDU6TGFiZWw0ODMyNjg1ODM=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/workload-api/cronjob
+- color: 0052cc
+  default: false
+  description: ""
+  id: 410265116
+  name: area/workload-api/daemonset
+  node_id: MDU6TGFiZWw0MTAyNjUxMTY=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/workload-api/daemonset
+- color: 0052cc
+  default: false
+  description: ""
+  id: 382474515
+  name: area/workload-api/deployment
+  node_id: MDU6TGFiZWwzODI0NzQ1MTU=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/workload-api/deployment
+- color: 0052cc
+  default: false
+  description: ""
+  id: 483268648
+  name: area/workload-api/job
+  node_id: MDU6TGFiZWw0ODMyNjg2NDg=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/workload-api/job
+- color: 0052cc
+  default: false
+  description: ""
+  id: 483066283
+  name: area/workload-api/replicaset
+  node_id: MDU6TGFiZWw0ODMwNjYyODM=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/area/workload-api/replicaset
+- color: fef2c0
+  default: false
+  description: Indicates a cherry-pick PR into a release branch has been approved
+    by the release branch manager.
+  id: 339502903
+  name: cherry-pick-approved
+  node_id: MDU6TGFiZWwzMzk1MDI5MDM=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/cherry-pick-approved
+- color: e11d21
+  default: false
+  description: Indicates the PR's author has not signed the CNCF CLA.
+  id: 477397085
+  name: 'cncf-cla: no'
+  node_id: MDU6TGFiZWw0NzczOTcwODU=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/cncf-cla:%20no
+- color: bfe5bf
+  default: false
+  description: Indicates the PR's author has signed the CNCF CLA.
+  id: 477397086
+  name: 'cncf-cla: yes'
+  node_id: MDU6TGFiZWw0NzczOTcwODY=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/cncf-cla:%20yes
+- color: c0ff4a
+  default: false
+  description: Denotes an issue or PR intended to be handled by the code of conduct
+    committee.
+  id: 815657036
+  name: committee/code-of-conduct
+  node_id: MDU6TGFiZWw4MTU2NTcwMzY=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/committee/code-of-conduct
+- color: c0ff4a
+  default: false
+  description: Denotes an issue or PR intended to be handled by the product security
+    committee.
+  id: 1199275492
+  name: committee/security-response
+  node_id: MDU6TGFiZWwxMTk5Mjc1NDky
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/committee/security-response
+- color: c0ff4a
+  default: false
+  description: Denotes an issue or PR intended to be handled by the steering committee.
+  id: 815656936
+  name: committee/steering
+  node_id: MDU6TGFiZWw4MTU2NTY5MzY=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/committee/steering
+- color: 0366d6
+  default: false
+  description: Pull requests that update a dependency file
+  id: 2207995975
+  name: dependencies
+  node_id: MDU6TGFiZWwyMjA3OTk1OTc1
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/dependencies
+- color: e11d21
+  default: false
+  description: DEPRECATED. Indicates that a PR should not merge. Label can only be
+    manually applied/removed.
+  id: 335674843
+  name: do-not-merge
+  node_id: MDU6TGFiZWwzMzU2NzQ4NDM=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/do-not-merge
+- color: e11d21
+  default: false
+  description: Indicates that a PR should not merge because it touches files in blocked
+    paths.
+  id: 689109191
+  name: do-not-merge/blocked-paths
+  node_id: MDU6TGFiZWw2ODkxMDkxOTE=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/do-not-merge/blocked-paths
+- color: e11d21
+  default: false
+  description: Indicates that a PR is not yet approved to merge into a release branch.
+  id: 680154135
+  name: do-not-merge/cherry-pick-not-approved
+  node_id: MDU6TGFiZWw2ODAxNTQxMzU=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/do-not-merge/cherry-pick-not-approved
+- color: e11d21
+  default: false
+  description: Indicates a PR which contains merge commits.
+  id: 1391972461
+  name: do-not-merge/contains-merge-commits
+  node_id: MDU6TGFiZWwxMzkxOTcyNDYx
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/do-not-merge/contains-merge-commits
+- color: e11d21
+  default: false
+  description: Indicates that a PR should not merge because someone has issued a /hold
+    command.
+  id: 687565804
+  name: do-not-merge/hold
+  node_id: MDU6TGFiZWw2ODc1NjU4MDQ=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/do-not-merge/hold
+- color: e11d21
+  default: false
+  description: Indicates that a PR should not merge because it has an invalid commit
+    message.
+  id: 1322574295
+  name: do-not-merge/invalid-commit-message
+  node_id: MDU6TGFiZWwxMzIyNTc0Mjk1
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/do-not-merge/invalid-commit-message
+- color: e11d21
+  default: false
+  description: Indicates that a PR should not merge because it has an invalid OWNERS
+    file in it.
+  id: 969564572
+  name: do-not-merge/invalid-owners-file
+  node_id: MDU6TGFiZWw5Njk1NjQ1NzI=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/do-not-merge/invalid-owners-file
+- color: e11d21
+  default: false
+  description: Indicates a PR lacks a `kind/foo` label and requires one.
+  id: 2480789134
+  name: do-not-merge/needs-kind
+  node_id: MDU6TGFiZWwyNDgwNzg5MTM0
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/do-not-merge/needs-kind
+- color: e11d21
+  default: false
+  description: Indicates an issue or PR lacks a `sig/foo` label and requires one.
+  id: 2480789133
+  name: do-not-merge/needs-sig
+  node_id: MDU6TGFiZWwyNDgwNzg5MTMz
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/do-not-merge/needs-sig
+- color: e11d21
+  default: false
+  description: Indicates that a PR should not merge because it's missing one of the
+    release note labels.
+  id: 680152113
+  name: do-not-merge/release-note-label-needed
+  node_id: MDU6TGFiZWw2ODAxNTIxMTM=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/do-not-merge/release-note-label-needed
+- color: e11d21
+  default: false
+  description: Indicates that a PR should not merge because it is a work in progress.
+  id: 687500047
+  name: do-not-merge/work-in-progress
+  node_id: MDU6TGFiZWw2ODc1MDAwNDc=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/do-not-merge/work-in-progress
+- color: 7057ff
+  default: true
+  description: Denotes an issue ready for a new contributor, according to the "help
+    wanted" guidelines.
+  id: 954672878
+  name: good first issue
+  node_id: MDU6TGFiZWw5NTQ2NzI4Nzg=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/good%20first%20issue
+- color: 006b75
+  default: true
+  description: Denotes an issue that needs help from a contributor. Must meet "help
+    wanted" guidelines.
+  id: 433686790
+  name: help wanted
+  node_id: MDU6TGFiZWw0MzM2ODY3OTA=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/help%20wanted
+- color: e11d21
+  default: false
+  description: Categorizes issue or PR as related to adding, removing, or otherwise
+    changing an API
+  id: 261005360
+  name: kind/api-change
+  node_id: MDU6TGFiZWwyNjEwMDUzNjA=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/kind/api-change
+- color: e11d21
+  default: false
+  description: Categorizes issue or PR as related to a bug.
+  id: 105146071
+  name: kind/bug
+  node_id: MDU6TGFiZWwxMDUxNDYwNzE=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/kind/bug
+- color: c7def8
+  default: false
+  description: Categorizes issue or PR as related to cleaning up code, process, or
+    technical debt.
+  id: 122775691
+  name: kind/cleanup
+  node_id: MDU6TGFiZWwxMjI3NzU2OTE=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/kind/cleanup
+- color: e11d21
+  default: false
+  description: Categorizes issue or PR as related to a feature/enhancement marked
+    for deprecation.
+  id: 1740258266
+  name: kind/deprecation
+  node_id: MDU6TGFiZWwxNzQwMjU4MjY2
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/kind/deprecation
+- color: c7def8
+  default: false
+  description: Categorizes issue or PR as related to design.
+  id: 114509261
+  name: kind/design
+  node_id: MDU6TGFiZWwxMTQ1MDkyNjE=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/kind/design
+- color: c7def8
+  default: false
+  description: Categorizes issue or PR as related to documentation.
+  id: 116801185
+  name: kind/documentation
+  node_id: MDU6TGFiZWwxMTY4MDExODU=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/kind/documentation
+- color: e11d21
+  default: false
+  description: Categorizes issue or PR as related to a consistently or frequently
+    failing test.
+  id: 496752468
+  name: kind/failing-test
+  node_id: MDU6TGFiZWw0OTY3NTI0Njg=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/kind/failing-test
+- color: c7def8
+  default: false
+  description: Categorizes issue or PR as related to a new feature.
+  id: 267761362
+  name: kind/feature
+  node_id: MDU6TGFiZWwyNjc3NjEzNjI=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/kind/feature
+- color: f7c6c7
+  default: false
+  description: Categorizes issue or PR as related to a flaky test.
+  id: 264749912
+  name: kind/flake
+  node_id: MDU6TGFiZWwyNjQ3NDk5MTI=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/kind/flake
+- color: e11d21
+  default: false
+  description: Categorizes issue or PR as related to a regression from a prior release.
+  id: 1967276560
+  name: kind/regression
+  node_id: MDU6TGFiZWwxOTY3Mjc2NTYw
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/kind/regression
+- color: d455d0
+  default: false
+  description: Categorizes issue or PR as a support question.
+  id: 130318610
+  name: kind/support
+  node_id: MDU6TGFiZWwxMzAzMTg2MTA=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/kind/support
+- color: 15dd18
+  default: false
+  description: Indicates that a PR is ready to be merged.
+  id: 148225179
+  name: lgtm
+  node_id: MDU6TGFiZWwxNDgyMjUxNzk=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/lgtm
+- color: 8fc951
+  default: false
+  description: Indicates that an issue or PR is actively being worked on by a contributor.
+  id: 1007207688
+  name: lifecycle/active
+  node_id: MDU6TGFiZWwxMDA3MjA3Njg4
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/lifecycle/active
+- color: d3e2f0
+  default: false
+  description: Indicates that an issue or PR should not be auto-closed due to staleness.
+  id: 778118403
+  name: lifecycle/frozen
+  node_id: MDU6TGFiZWw3NzgxMTg0MDM=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/lifecycle/frozen
+- color: "604460"
+  default: false
+  description: Denotes an issue or PR that has aged beyond stale and will be auto-closed.
+  id: 778118402
+  name: lifecycle/rotten
+  node_id: MDU6TGFiZWw3NzgxMTg0MDI=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/lifecycle/rotten
+- color: "795548"
+  default: false
+  description: Denotes an issue or PR has remained open with no activity and has become
+    stale.
+  id: 778118404
+  name: lifecycle/stale
+  node_id: MDU6TGFiZWw3NzgxMTg0MDQ=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/lifecycle/stale
+- color: ededed
+  default: false
+  description: ""
+  id: 711852570
+  name: milestone/incomplete-labels
+  node_id: MDU6TGFiZWw3MTE4NTI1NzA=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/milestone/incomplete-labels
+- color: ededed
+  default: false
+  description: ""
+  id: 711852621
+  name: milestone/needs-approval
+  node_id: MDU6TGFiZWw3MTE4NTI2MjE=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/milestone/needs-approval
+- color: ededed
+  default: false
+  description: ""
+  id: 680168330
+  name: milestone/needs-attention
+  node_id: MDU6TGFiZWw2ODAxNjgzMzA=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/milestone/needs-attention
+- color: ededed
+  default: false
+  description: ""
+  id: 687345274
+  name: milestone/removed
+  node_id: MDU6TGFiZWw2ODczNDUyNzQ=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/milestone/removed
+- color: ededed
+  default: false
+  description: Indicates a PR lacks a `kind/foo` label and requires one.
+  id: 1047217136
+  name: needs-kind
+  node_id: MDU6TGFiZWwxMDQ3MjE3MTM2
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/needs-kind
+- color: b60205
+  default: false
+  description: Indicates a PR that requires an org member to verify it is safe to
+    test.
+  id: 573014062
+  name: needs-ok-to-test
+  node_id: MDU6TGFiZWw1NzMwMTQwNjI=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/needs-ok-to-test
+- color: ededed
+  default: false
+  description: Indicates a PR lacks a `priority/foo` label and requires one.
+  id: 1111992057
+  name: needs-priority
+  node_id: MDU6TGFiZWwxMTExOTkyMDU3
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/needs-priority
+- color: e11d21
+  default: false
+  description: Indicates a PR cannot be merged because it has merge conflicts with
+    HEAD.
+  id: 240247879
+  name: needs-rebase
+  node_id: MDU6TGFiZWwyNDAyNDc4Nzk=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/needs-rebase
+- color: ededed
+  default: false
+  description: Indicates an issue or PR lacks a `sig/foo` label and requires one.
+  id: 617149945
+  name: needs-sig
+  node_id: MDU6TGFiZWw2MTcxNDk5NDU=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/needs-sig
+- color: ededed
+  default: false
+  description: Indicates an issue or PR lacks a `triage/foo` label and requires one.
+  id: 2389815605
+  name: needs-triage
+  node_id: MDU6TGFiZWwyMzg5ODE1NjA1
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/needs-triage
+- color: 0052cc
+  default: false
+  description: Issues or PRs related to CVEs officially announced by Security Response
+    Committee (SRC)
+  id: 3603068678
+  name: official-cve-feed
+  node_id: LA_kwDOAToIks7WwncG
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/official-cve-feed
+- color: 15dd18
+  default: false
+  description: Indicates a non-member PR verified by an org member that is safe to
+    test.
+  id: 1086787260
+  name: ok-to-test
+  node_id: MDU6TGFiZWwxMDg2Nzg3MjYw
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/ok-to-test
+- color: fef2c0
+  default: false
+  description: Lowest priority. Possibly useful, but not yet enough support to actually
+    get it done.
+  id: 149621825
+  name: priority/awaiting-more-evidence
+  node_id: MDU6TGFiZWwxNDk2MjE4MjU=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/priority/awaiting-more-evidence
+- color: fbca04
+  default: false
+  description: Higher priority than priority/awaiting-more-evidence.
+  id: 114528273
+  name: priority/backlog
+  node_id: MDU6TGFiZWwxMTQ1MjgyNzM=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/priority/backlog
+- color: e11d21
+  default: false
+  description: Highest priority. Must be actively worked on as someone's top priority
+    right now.
+  id: 114528068
+  name: priority/critical-urgent
+  node_id: MDU6TGFiZWwxMTQ1MjgwNjg=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/priority/critical-urgent
+- color: eb6420
+  default: false
+  description: Important over the long term, but may not be staffed and/or may need
+    multiple releases to complete.
+  id: 496752236
+  name: priority/important-longterm
+  node_id: MDU6TGFiZWw0OTY3NTIyMzY=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/priority/important-longterm
+- color: eb6420
+  default: false
+  description: Must be staffed and worked on either currently, or very soon, ideally
+    in time for the next release.
+  id: 114528223
+  name: priority/important-soon
+  node_id: MDU6TGFiZWwxMTQ1MjgyMjM=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/priority/important-soon
+- color: d93f0b
+  default: false
+  description: ""
+  id: 435667038
+  name: release-blocker
+  node_id: MDU6TGFiZWw0MzU2NjcwMzg=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/release-blocker
+- color: c2e0c6
+  default: false
+  description: Denotes a PR that will be considered when it comes time to generate
+    release notes.
+  id: 200149833
+  name: release-note
+  node_id: MDU6TGFiZWwyMDAxNDk4MzM=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/release-note
+- color: c2e0c6
+  default: false
+  description: Denotes a PR that introduces potentially breaking changes that require
+    user action.
+  id: 354968448
+  name: release-note-action-required
+  node_id: MDU6TGFiZWwzNTQ5Njg0NDg=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/release-note-action-required
+- color: c2e0c6
+  default: false
+  description: Denotes a PR that doesn't merit a release note.
+  id: 349530249
+  name: release-note-none
+  node_id: MDU6TGFiZWwzNDk1MzAyNDk=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/release-note-none
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to SIG API Machinery.
+  id: 173493835
+  name: sig/api-machinery
+  node_id: MDU6TGFiZWwxNzM0OTM4MzU=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/sig/api-machinery
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to SIG Apps.
+  id: 404091735
+  name: sig/apps
+  node_id: MDU6TGFiZWw0MDQwOTE3MzU=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/sig/apps
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to SIG Architecture.
+  id: 636152047
+  name: sig/architecture
+  node_id: MDU6TGFiZWw2MzYxNTIwNDc=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/sig/architecture
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to SIG Auth.
+  id: 357119284
+  name: sig/auth
+  node_id: MDU6TGFiZWwzNTcxMTkyODQ=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/sig/auth
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to SIG Autoscaling.
+  id: 238245616
+  name: sig/autoscaling
+  node_id: MDU6TGFiZWwyMzgyNDU2MTY=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/sig/autoscaling
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to SIG CLI.
+  id: 450823910
+  name: sig/cli
+  node_id: MDU6TGFiZWw0NTA4MjM5MTA=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/sig/cli
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to SIG Cloud Provider.
+  id: 958178286
+  name: sig/cloud-provider
+  node_id: MDU6TGFiZWw5NTgxNzgyODY=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/sig/cloud-provider
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to SIG Cluster Lifecycle.
+  id: 173494222
+  name: sig/cluster-lifecycle
+  node_id: MDU6TGFiZWwxNzM0OTQyMjI=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/sig/cluster-lifecycle
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to SIG Contributor Experience.
+  id: 261778410
+  name: sig/contributor-experience
+  node_id: MDU6TGFiZWwyNjE3Nzg0MTA=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/sig/contributor-experience
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to SIG Docs.
+  id: 496761699
+  name: sig/docs
+  node_id: MDU6TGFiZWw0OTY3NjE2OTk=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/sig/docs
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to SIG Instrumentation.
+  id: 482207917
+  name: sig/instrumentation
+  node_id: MDU6TGFiZWw0ODIyMDc5MTc=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/sig/instrumentation
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to SIG K8s Infra.
+  id: 3373472731
+  name: sig/k8s-infra
+  node_id: LA_kwDOAToIks7JExvb
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/sig/k8s-infra
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to SIG Multicluster.
+  id: 711861754
+  name: sig/multicluster
+  node_id: MDU6TGFiZWw3MTE4NjE3NTQ=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/sig/multicluster
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to SIG Network.
+  id: 116712108
+  name: sig/network
+  node_id: MDU6TGFiZWwxMTY3MTIxMDg=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/sig/network
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to SIG Node.
+  id: 173493665
+  name: sig/node
+  node_id: MDU6TGFiZWwxNzM0OTM2NjU=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/sig/node
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to SIG Release.
+  id: 614023989
+  name: sig/release
+  node_id: MDU6TGFiZWw2MTQwMjM5ODk=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/sig/release
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to SIG Scalability.
+  id: 125010198
+  name: sig/scalability
+  node_id: MDU6TGFiZWwxMjUwMTAxOTg=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/sig/scalability
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to SIG Scheduling.
+  id: 125550211
+  name: sig/scheduling
+  node_id: MDU6TGFiZWwxMjU1NTAyMTE=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/sig/scheduling
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to SIG Security.
+  id: 2315011126
+  name: sig/security
+  node_id: MDU6TGFiZWwyMzE1MDExMTI2
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/sig/security
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to SIG Service Catalog.
+  id: 433740132
+  name: sig/service-catalog
+  node_id: MDU6TGFiZWw0MzM3NDAxMzI=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/sig/service-catalog
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to SIG Storage.
+  id: 169428334
+  name: sig/storage
+  node_id: MDU6TGFiZWwxNjk0MjgzMzQ=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/sig/storage
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to SIG Testing.
+  id: 483069764
+  name: sig/testing
+  node_id: MDU6TGFiZWw0ODMwNjk3NjQ=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/sig/testing
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to SIG UI.
+  id: 618574759
+  name: sig/ui
+  node_id: MDU6TGFiZWw2MTg1NzQ3NTk=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/sig/ui
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to SIG Usability.
+  id: 1476695221
+  name: sig/usability
+  node_id: MDU6TGFiZWwxNDc2Njk1MjIx
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/sig/usability
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to SIG Windows.
+  id: 422106010
+  name: sig/windows
+  node_id: MDU6TGFiZWw0MjIxMDYwMTA=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/sig/windows
+- color: ee9900
+  default: false
+  description: Denotes a PR that changes 100-499 lines, ignoring generated files.
+  id: 253450978
+  name: size/L
+  node_id: MDU6TGFiZWwyNTM0NTA5Nzg=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/size/L
+- color: eebb00
+  default: false
+  description: Denotes a PR that changes 30-99 lines, ignoring generated files.
+  id: 253450934
+  name: size/M
+  node_id: MDU6TGFiZWwyNTM0NTA5MzQ=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/size/M
+- color: 77bb00
+  default: false
+  description: Denotes a PR that changes 10-29 lines, ignoring generated files.
+  id: 253450895
+  name: size/S
+  node_id: MDU6TGFiZWwyNTM0NTA4OTU=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/size/S
+- color: ee5500
+  default: false
+  description: Denotes a PR that changes 500-999 lines, ignoring generated files.
+  id: 253451057
+  name: size/XL
+  node_id: MDU6TGFiZWwyNTM0NTEwNTc=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/size/XL
+- color: "009900"
+  default: false
+  description: Denotes a PR that changes 0-9 lines, ignoring generated files.
+  id: 253450793
+  name: size/XS
+  node_id: MDU6TGFiZWwyNTM0NTA3OTM=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/size/XS
+- color: ee0000
+  default: false
+  description: Denotes a PR that changes 1000+ lines, ignoring generated files.
+  id: 253451093
+  name: size/XXL
+  node_id: MDU6TGFiZWwyNTM0NTEwOTM=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/size/XXL
+- color: ededed
+  default: false
+  description: ""
+  id: 1150509281
+  name: status/approved-for-milestone
+  node_id: MDU6TGFiZWwxMTUwNTA5Mjgx
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/status/approved-for-milestone
+- color: e11d21
+  default: false
+  description: Denotes an issue that blocks the tide merge queue for a branch while
+    it is open.
+  id: 1313645094
+  name: tide/merge-blocker
+  node_id: MDU6TGFiZWwxMzEzNjQ1MDk0
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/tide/merge-blocker
+- color: ffaa00
+  default: false
+  description: Denotes a PR that should use a standard merge by tide when it merges.
+  id: 1299699582
+  name: tide/merge-method-merge
+  node_id: MDU6TGFiZWwxMjk5Njk5NTgy
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/tide/merge-method-merge
+- color: ffaa00
+  default: false
+  description: Denotes a PR that should be rebased by tide when it merges.
+  id: 1299699756
+  name: tide/merge-method-rebase
+  node_id: MDU6TGFiZWwxMjk5Njk5NzU2
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/tide/merge-method-rebase
+- color: ffaa00
+  default: false
+  description: Denotes a PR that should be squashed by tide when it merges.
+  id: 1049624783
+  name: tide/merge-method-squash
+  node_id: MDU6TGFiZWwxMDQ5NjI0Nzgz
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/tide/merge-method-squash
+- color: 8fc951
+  default: false
+  description: Indicates an issue or PR is ready to be actively worked on.
+  id: 2389856656
+  name: triage/accepted
+  node_id: MDU6TGFiZWwyMzg5ODU2NjU2
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/triage/accepted
+- color: d455d0
+  default: false
+  description: Indicates an issue is a duplicate of other open issue.
+  id: 862108568
+  name: triage/duplicate
+  node_id: MDU6TGFiZWw4NjIxMDg1Njg=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/triage/duplicate
+- color: d455d0
+  default: false
+  description: Indicates an issue needs more information in order to work on it.
+  id: 862108635
+  name: triage/needs-information
+  node_id: MDU6TGFiZWw4NjIxMDg2MzU=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/triage/needs-information
+- color: d455d0
+  default: false
+  description: Indicates an issue can not be reproduced as described.
+  id: 862108684
+  name: triage/not-reproducible
+  node_id: MDU6TGFiZWw4NjIxMDg2ODQ=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/triage/not-reproducible
+- color: d455d0
+  default: false
+  description: Indicates an issue that can not or will not be resolved.
+  id: 862108765
+  name: triage/unresolved
+  node_id: MDU6TGFiZWw4NjIxMDg3NjU=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/triage/unresolved
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to ug-big-data.
+  id: 528770718
+  name: ug/big-data
+  node_id: MDU6TGFiZWw1Mjg3NzA3MTg=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/ug/big-data
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to ug-vmware.
+  id: 1596573758
+  name: ug/vmware
+  node_id: MDU6TGFiZWwxNTk2NTczNzU4
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/ug/vmware
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to WG API Expression.
+  id: 1985744519
+  name: wg/api-expression
+  node_id: MDU6TGFiZWwxOTg1NzQ0NTE5
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/wg/api-expression
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to WG Batch.
+  id: 3984790042
+  name: wg/batch
+  node_id: LA_kwDOAToIks7tgxIa
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/wg/batch
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to wg-cluster-api.
+  id: 971786582
+  name: wg/cluster-api
+  node_id: MDU6TGFiZWw5NzE3ODY1ODI=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/wg/cluster-api
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to WG Component Standard.
+  id: 1188415049
+  name: wg/component-standard
+  node_id: MDU6TGFiZWwxMTg4NDE1MDQ5
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/wg/component-standard
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to WG Data Protection.
+  id: 3959367156
+  name: wg/data-protection
+  node_id: LA_kwDOAToIks7r_yX0
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/wg/data-protection
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to WG IOT Edge.
+  id: 971786579
+  name: wg/iot-edge
+  node_id: MDU6TGFiZWw5NzE3ODY1Nzk=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/wg/iot-edge
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to WG LTS.
+  id: 1246937041
+  name: wg/lts
+  node_id: MDU6TGFiZWwxMjQ2OTM3MDQx
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/wg/lts
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to WG Machine Learning.
+  id: 971786592
+  name: wg/machine-learning
+  node_id: MDU6TGFiZWw5NzE3ODY1OTI=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/wg/machine-learning
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to WG Multitenancy.
+  id: 971786584
+  name: wg/multitenancy
+  node_id: MDU6TGFiZWw5NzE3ODY1ODQ=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/wg/multitenancy
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to WG Naming.
+  id: 2175214396
+  name: wg/naming
+  node_id: MDU6TGFiZWwyMTc1MjE0Mzk2
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/wg/naming
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to WG Policy.
+  id: 971786590
+  name: wg/policy
+  node_id: MDU6TGFiZWw5NzE3ODY1OTA=
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/wg/policy
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to WG Reliability
+  id: 2681759667
+  name: wg/reliability
+  node_id: MDU6TGFiZWwyNjgxNzU5NjY3
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/wg/reliability
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to WG Security Audit.
+  id: 1086787146
+  name: wg/security-audit
+  node_id: MDU6TGFiZWwxMDg2Nzg3MTQ2
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/wg/security-audit
+- color: d2b48c
+  default: false
+  description: Categorizes an issue or PR as relevant to WG Structured Logging.
+  id: 3025055720
+  name: wg/structured-logging
+  node_id: MDU6TGFiZWwzMDI1MDU1NzIw
+  url: https://api.github.com/repos/kubernetes/kubernetes/labels/wg/structured-logging

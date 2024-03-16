@@ -1,0 +1,373 @@
+# Copyright © 2023 KubeCub open source community. All rights reserved.
+# Licensed under the MIT License (the "License");
+# you may not use this file except in compliance with the License.
+
+before:
+  hooks:
+    # You may remove this if you don't use go modules.
+    - make clean
+    - make tidy
+    - make copyright-add
+    # you may remove this if you don't need go generate
+    - make generate
+
+# The lines beneath this are called `modelines`. See `:help modeline`
+# Feel free to remove those if you don't want/use them.
+# yaml-language-server: $schema=https://goreleaser.com/static/schema.json
+# vim: set ts=2 sw=2 tw=0 fo=cnqoj
+
+snapshot:
+  name_template: "{{ incpatch .Version }}-next"
+
+report_sizes: true
+
+# metadata:
+#   mod_timestamp: "{{ .CommitTimestamp }}"
+
+# Default: './dist'
+dist: _output/dist
+
+builds:
+  - binary: syncer
+    id: syncer
+    main: ./cmd/syncer/main.go
+    goos:
+      - windows
+      - darwin
+      - linux
+      - freebsd
+    goarch:
+      - amd64
+      - 386
+      - arm
+      - arm64
+    goarm:
+      - 6
+      - 7
+  - binary: exporter
+    id: exporter
+    main: ./cmd/exporter/main.go
+    goos:
+      - windows
+      - darwin
+      - linux
+      - freebsd
+    goarch:
+      - amd64
+      - 386
+      - arm
+      - arm64
+    goarm:
+      - 6
+      - 7
+
+archives:
+  - format: tar.gz
+    # this name template makes the OS and Arch compatible with the results of uname.
+    name_template: >-
+      {{ .ProjectName }}_
+      {{- title .Os }}_
+      {{- if eq .Arch "amd64" }}x86_64
+      {{- else if eq .Arch "386" }}i386
+      {{- else }}{{ .Arch }}{{ end }}
+      {{- if .Arm }}v{{ .Arm }}{{ end }}
+    # use zip for windows archives
+    files:
+      - LICENSE
+      - README.md
+      - CHANGELOG/*
+      - docs/*
+      # a more complete example, check the globbing deep dive below
+      - src: "*.md"
+        dst: docs
+
+        # Strip parent folders when adding files to the archive.
+        strip_parent: true
+
+        # File info.
+        # Not all fields are supported by all formats available formats.
+        #
+        # Default: copied from the source file
+        info:
+          # Templates: allowed (since v1.14)
+          owner: root
+
+          # Templates: allowed (since v1.14)
+          group: root
+
+          # Must be in time.RFC3339Nano format.
+          #
+          # Templates: allowed (since v1.14)
+          mtime: "{{ .CommitDate }}"
+
+          # File mode.
+          mode: 0644
+
+    format_overrides:
+    - goos: windows
+      format: zip
+
+nfpms:
+  - id: packages
+    builds:
+      - syncer
+    # Your app's vendor.
+    vendor: kubecub
+    homepage: https://github.com/kubecub/comment-lang-detector
+    maintainer: kubbot <https://github.com/kubbot>
+    description: |-
+      Auto sync github labels
+      Kubecub && cubxxw
+    license: MIT
+    formats:
+      - apk
+      - deb
+      - rpm
+      - termux.deb # Since: v1.11
+      - archlinux # Since: v1.13
+    dependencies:
+      - git
+    recommends:
+      - golang
+
+changelog:
+  sort: asc
+  use: github
+  filters:
+    exclude:
+      - "^test:"
+      - "^chore"
+      - "merge conflict"
+      - Merge pull request
+      - Merge remote-tracking branch
+      - Merge branch
+      - go mod tidy
+  groups:
+    - title: Dependency updates
+      regexp: '^.*?(feat|fix)\(deps\)!?:.+$'
+      order: 300
+    - title: "New Features"
+      regexp: '^.*?feat(\([[:word:]]+\))??!?:.+$'
+      order: 100
+    - title: "Security updates"
+      regexp: '^.*?sec(\([[:word:]]+\))??!?:.+$'
+      order: 150
+    - title: "Bug fixes"
+      regexp: '^.*?fix(\([[:word:]]+\))??!?:.+$'
+      order: 200
+    - title: "Documentation updates"
+      regexp: ^.*?doc(\([[:word:]]+\))??!?:.+$
+      order: 400
+    - title: "Build process updates"
+      regexp: ^.*?build(\([[:word:]]+\))??!?:.+$
+      order: 400
+    - title: Other work
+      order: 9999
+
+# # semantization
+# snapcrafts:
+#   - name_template: "{{ .ProjectName }}_{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}"
+#     summary: sync labels
+#     description: |
+#       sync labels
+#     grade: stable
+#     confinement: classic
+#     publish: true
+
+# sboms:
+  # - artifacts: archive
+
+# signs:
+# - cmd: cosign
+#   stdin: '{{ .Env.COSIGN_PWD }}'
+#   args:
+#   - "sign-blob"
+#   - "--key=cosign.key"
+#   - "--output-signature=${signature}"
+#   - "${artifact}"
+#   - "--yes" # needed on cosign 2.0.0+
+#   artifacts: all
+
+# docker_signs:
+
+
+kos:
+  - repository: ghcr.io/kubecub/syncer
+    id: syncer
+    tags:
+    - '{{.Version}}'
+    - latest
+    bare: true
+    main: ./cmd/syncer/main.go
+    preserve_import_paths: false
+    base_image: alpine
+    platforms:
+    - linux/amd64
+    - linux/arm64
+
+  - repository: ghcr.io/kubecub/exporter
+    id: exporter
+    tags:
+    - '{{.Version}}'
+    - latest
+    bare: true
+    main: ./cmd/exporter/main.go
+    base_image: alpine
+    preserve_import_paths: false
+    platforms:
+    - linux/amd64
+    - linux/arm64
+
+# .goreleaser.yaml
+milestones:
+  # You can have multiple milestone configs
+  -
+    # Repository for the milestone
+    # Default is extracted from the origin remote URL
+    repo:
+      owner: user
+      name: repo
+
+    # Whether to close the milestone
+    close: true
+
+    # Fail release on errors, such as missing milestone.
+    fail_on_error: false
+
+    # Name of the milestone
+    #
+    # Default: '{{ .Tag }}'
+    name_template: "Current Release"
+
+publishers:
+  - name: "fury.io"
+    ids:
+      - packages
+    dir: "{{ dir .ArtifactPath }}"
+    cmd: |
+      bash -c '
+      if [[ "{{ .Tag }}" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+        curl -F package=@{{ .ArtifactName }} https://{{ .Env.FURY_TOKEN }}@push.fury.io/{{ .Env.USERNAME }}/
+      else
+        echo "Skipping deployment: Non-production release detected"
+      fi'
+
+checksum:
+  name_template: "{{ .ProjectName }}_checksums.txt"
+  algorithm: sha256
+
+# dockers:
+#   - use: buildx
+#     ids:
+#       - syncer
+#     goos: linux
+#     goarch: amd64
+#     image_templates:
+#       - ghcr.io/{{ .Env.USERNAME }}/syncer:{{ .Tag }}-amd64
+#     dockerfile: deploy/syncer/Dockerfile.syncer
+#     build_flag_templates:
+#       - --pull
+#       - --platform=linux/amd64
+#       - --label=io.syncer.image.created={{.Date}}
+#       - --label=io.syncer.image.title=syncer
+#       - --label=io.syncer.image.revision={{.ShortCommit}}
+#       - --label=io.syncer.image.version={{.Tag }}
+#       - --label=io.syncer.image.auth={{ .Env.USERNAME }}
+
+#   - use: buildx
+#     ids:
+#       - syncer
+#     goos: linux
+#     goarch: arm64
+#     image_templates:
+#       - ghcr.io/{{ .Env.USERNAME }}/syncer:{{ .Tag }}-amd64
+#     dockerfile: docker/syncer/Dockerfile.syncer
+#     build_flag_templates:
+#       - --pull
+#       - --platform=linux/amd64
+#       - --label=io.syncer.image.created={{.Date}}
+#       - --label=io.syncer.image.title=syncer
+#       - --label=io.syncer.image.revision={{.ShortCommit}}
+#       - --label=io.syncer.image.version={{.Tag }}
+#       - --label=io.syncer.image.auth={{ .Env.USERNAME }}
+
+#   - use: buildx
+#     ids:
+#       - exporter
+#     goos: linux
+#     goarch: amd64
+#     image_templates:
+#       - ghcr.io/{{ .Env.USERNAME }}/exporter:{{ .Tag }}-amd64
+#     dockerfile: deploy/exporter/Dockerfile.exporter
+#     build_flag_templates:
+#       - --pull
+#       - --platform=linux/amd64
+#       - --label=io.exporter.image.created={{.Date}}
+#       - --label=io.exporter.image.title=exporter
+#       - --label=io.exporter.image.revision={{.ShortCommit}}
+#       - --label=io.exporter.image.version={{.Tag }}
+#       - --label=io.exporter.image.auth={{ .Env.USERNAME }}
+
+#   - use: buildx
+#     ids:
+#       - exporter
+#     goos: linux
+#     goarch: arm64
+#     image_templates:
+#       - ghcr.io/{{ .Env.USERNAME }}/exporter:{{ .Tag }}-arm64
+#     dockerfile: docker/exporter/Dockerfile.exporter
+#     build_flag_templates:
+#       - --pull
+#       - --platform=linux/arm64
+#       - --label=io.exporter.image.created={{.Date}}
+#       - --label=io.exporter.image.title=exporter
+#       - --label=io.exporter.image.revision={{.ShortCommit}}
+#       - --label=io.exporter.image.version={{.Tag }}
+#       - --label=io.exporter.image.auth={{ .Env.USERNAME }}
+
+
+# docker_manifests:
+#   - name_template: ghcr.io/{{ .Env.USERNAME }}/exporter:{{ .Tag }}
+#     image_templates:
+#       - ghcr.io/{{ .Env.USERNAME }}/exporter:{{ .Tag }}-amd64
+#       - ghcr.io/{{ .Env.USERNAME }}/exporter:{{ .Tag }}-arm64
+#   - name_template: ghcr.io/{{ .Env.USERNAME }}/syncer:{{ .Tag }}
+#     image_templates:
+#       - ghcr.io/{{ .Env.USERNAME }}/syncer:{{ .Tag }}-amd64
+#       - ghcr.io/{{ .Env.USERNAME }}/syncer:{{ .Tag }}-arm64
+
+#   - name_template: ghcr.io/{{ .Env.USERNAME }}/exporter:latest
+#     image_templates:
+#       - ghcr.io/{{ .Env.USERNAME }}/exporter:{{ .Tag }}-amd64
+#       - ghcr.io/{{ .Env.USERNAME }}/exporter:{{ .Tag }}-arm64
+#   - name_template: ghcr.io/{{ .Env.USERNAME }}/syncer:latest
+#     image_templates:
+#       - ghcr.io/{{ .Env.USERNAME }}/syncer:{{ .Tag }}-amd64
+#       - ghcr.io/{{ .Env.USERNAME }}/syncer:{{ .Tag }}-arm64
+
+# docker_signs:
+#   - cmd: cosign
+#     artifacts: manifests
+#     output: true
+#     args:
+#       - "sign"
+#       - "${artifact}@${digest}"
+#       - --yes
+
+release:
+  footer: |
+    **Full Changelog**: https://github.com/kubecub/goreleaser/compare/{{ .PreviousTag }}...{{ .Tag }}
+
+    ## Helping out
+
+    This release is only possible thanks to **all** the support of some **awesome people**!
+
+    Want to be one of them?
+    You can [sponsor](https://goreleaser.com/sponsors/), get a [Pro License](https://goreleaser.com/pro) or [contribute with code](https://goreleaser.com/contributing).
+
+    ## Where to go next?
+
+    * Find examples and commented usage of all options in our [website](https://goreleaser.com/intro/).
+    * Reach out on [Discord](https://discord.gg/RGEBtg8vQ6) and [Twitter](https://twitter.com/goreleaser)!
+
+    <a href="https://goreleaser.com"><img src="https://raw.githubusercontent.com/goreleaser/artwork/master/opencollective-header.png" with="100%" alt="GoReleaser logo"></a>
