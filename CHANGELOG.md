@@ -73,7 +73,7 @@
 - delete issue template
 
 ### Feat
-- complete base exporter
+- complete base cld
 - add labels standard
 - synchronous tag
 - partial optimization

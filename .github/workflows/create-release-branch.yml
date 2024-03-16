@@ -30,11 +30,9 @@ jobs:
             MINOR_VERSION=${BASH_REMATCH[2]}
             PATCH_VERSION=${BASH_REMATCH[3]}
             
-            # 检查是否满足创建分支的条件
             if [[ ${PATCH_VERSION} -eq 0 && ! ${TAG_NAME} =~ [A-Za-z-] ]]; then
               RELEASE_BRANCH_NAME="release-v${MAJOR_VERSION}.0"
               
-              # 创建分支
               git branch "${RELEASE_BRANCH_NAME}" "${TAG_NAME}"
               git push origin "${RELEASE_BRANCH_NAME}"
               

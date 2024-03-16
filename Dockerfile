@@ -2,16 +2,22 @@
 # Licensed under the MIT License (the "License");
 # you may not use this file except in compliance with the License.
 
-FROM golang AS build
+FROM golang:1.20 as builder
+
+WORKDIR /build
+
 ENV GOPROXY=https://goproxy.cn
 
-WORKDIR /go/src/app
 
-COPY . /go/src/app
+COPY . .
 
-# RUN go build -o /go/bin/app cmd/exporter/main.go
 RUN make build
 
-FROM alpine
-COPY --from=build /go/bin/app/_output /
-CMD ["/app"]
+FROM alpine:latest
+
+WORKDIR /app
+
+COPY --from=builder /build/_output/bin/platforms/linux/amd64/cld .
+COPY --from=builder /build/config.yaml .
+
+ENTRYPOINT ["./cld", "-config", "config.yaml"]
