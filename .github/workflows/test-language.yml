@@ -1,0 +1,13 @@
+name: Language Check Workflow
+
+on: [push, pull_request]
+
+jobs:
+  comment-language-detector:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Code Language Detector
+        uses: kubecub/comment-lang-detector@v0.1.6
