@@ -94,13 +94,13 @@ archives:
 nfpms:
   - id: packages
     builds:
-      - syncer
+      - cld
     # Your app's vendor.
     vendor: kubecub
     homepage: https://github.com/kubecub/comment-lang-detector
     maintainer: kubbot <https://github.com/kubbot>
     description: |-
-      Auto sync github labels
+      Comment Lang Detector is a tool to detect the language of comments in code files.
       Kubecub && cubxxw
     license: MIT
     formats:
@@ -213,118 +213,10 @@ checksum:
   name_template: "{{ .ProjectName }}_checksums.txt"
   algorithm: sha256
 
-# dockers:
-#   - use: buildx
-#     ids:
-#       - syncer
-#     goos: linux
-#     goarch: amd64
-#     image_templates:
-#       - ghcr.io/{{ .Env.USERNAME }}/syncer:{{ .Tag }}-amd64
-#     dockerfile: deploy/syncer/Dockerfile.syncer
-#     build_flag_templates:
-#       - --pull
-#       - --platform=linux/amd64
-#       - --label=io.syncer.image.created={{.Date}}
-#       - --label=io.syncer.image.title=syncer
-#       - --label=io.syncer.image.revision={{.ShortCommit}}
-#       - --label=io.syncer.image.version={{.Tag }}
-#       - --label=io.syncer.image.auth={{ .Env.USERNAME }}
-
-#   - use: buildx
-#     ids:
-#       - syncer
-#     goos: linux
-#     goarch: arm64
-#     image_templates:
-#       - ghcr.io/{{ .Env.USERNAME }}/syncer:{{ .Tag }}-amd64
-#     dockerfile: docker/syncer/Dockerfile.syncer
-#     build_flag_templates:
-#       - --pull
-#       - --platform=linux/amd64
-#       - --label=io.syncer.image.created={{.Date}}
-#       - --label=io.syncer.image.title=syncer
-#       - --label=io.syncer.image.revision={{.ShortCommit}}
-#       - --label=io.syncer.image.version={{.Tag }}
-#       - --label=io.syncer.image.auth={{ .Env.USERNAME }}
-
-#   - use: buildx
-#     ids:
-#       - cld
-#     goos: linux
-#     goarch: amd64
-#     image_templates:
-#       - ghcr.io/{{ .Env.USERNAME }}/cld:{{ .Tag }}-amd64
-#     dockerfile: deploy/cld/Dockerfile.cld
-#     build_flag_templates:
-#       - --pull
-#       - --platform=linux/amd64
-#       - --label=io.cld.image.created={{.Date}}
-#       - --label=io.cld.image.title=cld
-#       - --label=io.cld.image.revision={{.ShortCommit}}
-#       - --label=io.cld.image.version={{.Tag }}
-#       - --label=io.cld.image.auth={{ .Env.USERNAME }}
-
-#   - use: buildx
-#     ids:
-#       - cld
-#     goos: linux
-#     goarch: arm64
-#     image_templates:
-#       - ghcr.io/{{ .Env.USERNAME }}/cld:{{ .Tag }}-arm64
-#     dockerfile: docker/cld/Dockerfile.cld
-#     build_flag_templates:
-#       - --pull
-#       - --platform=linux/arm64
-#       - --label=io.cld.image.created={{.Date}}
-#       - --label=io.cld.image.title=cld
-#       - --label=io.cld.image.revision={{.ShortCommit}}
-#       - --label=io.cld.image.version={{.Tag }}
-#       - --label=io.cld.image.auth={{ .Env.USERNAME }}
-
-
-# docker_manifests:
-#   - name_template: ghcr.io/{{ .Env.USERNAME }}/cld:{{ .Tag }}
-#     image_templates:
-#       - ghcr.io/{{ .Env.USERNAME }}/cld:{{ .Tag }}-amd64
-#       - ghcr.io/{{ .Env.USERNAME }}/cld:{{ .Tag }}-arm64
-#   - name_template: ghcr.io/{{ .Env.USERNAME }}/syncer:{{ .Tag }}
-#     image_templates:
-#       - ghcr.io/{{ .Env.USERNAME }}/syncer:{{ .Tag }}-amd64
-#       - ghcr.io/{{ .Env.USERNAME }}/syncer:{{ .Tag }}-arm64
-
-#   - name_template: ghcr.io/{{ .Env.USERNAME }}/cld:latest
-#     image_templates:
-#       - ghcr.io/{{ .Env.USERNAME }}/cld:{{ .Tag }}-amd64
-#       - ghcr.io/{{ .Env.USERNAME }}/cld:{{ .Tag }}-arm64
-#   - name_template: ghcr.io/{{ .Env.USERNAME }}/syncer:latest
-#     image_templates:
-#       - ghcr.io/{{ .Env.USERNAME }}/syncer:{{ .Tag }}-amd64
-#       - ghcr.io/{{ .Env.USERNAME }}/syncer:{{ .Tag }}-arm64
-
-# docker_signs:
-#   - cmd: cosign
-#     artifacts: manifests
-#     output: true
-#     args:
-#       - "sign"
-#       - "${artifact}@${digest}"
-#       - --yes
-
 release:
   footer: |
-    **Full Changelog**: https://github.com/kubecub/goreleaser/compare/{{ .PreviousTag }}...{{ .Tag }}
+    **Full Changelog**: https://github.com/kubecub/comment-lang-detector/compare/{{ .PreviousTag }}...{{ .Tag }}
 
     ## Helping out
 
     This release is only possible thanks to **all** the support of some **awesome people**!
-
-    Want to be one of them?
-    You can [sponsor](https://goreleaser.com/sponsors/), get a [Pro License](https://goreleaser.com/pro) or [contribute with code](https://goreleaser.com/contributing).
-
-    ## Where to go next?
-
-    * Find examples and commented usage of all options in our [website](https://goreleaser.com/intro/).
-    * Reach out on [Discord](https://discord.gg/RGEBtg8vQ6) and [Twitter](https://twitter.com/goreleaser)!
-
-    <a href="https://goreleaser.com"><img src="https://raw.githubusercontent.com/goreleaser/artwork/master/opencollective-header.png" with="100%" alt="GoReleaser logo"></a>

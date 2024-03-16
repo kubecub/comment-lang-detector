@@ -41,7 +41,6 @@
 - more feature
 - branch save
 - labels sync
-- syncer docker file
 - test labels
 - test labels
 - test labels

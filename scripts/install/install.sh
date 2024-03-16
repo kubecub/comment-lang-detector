@@ -120,20 +120,20 @@ function iam::install::init_into_go_env()
 # Go 编译环境安装和配置
 function iam::install::go_command()
 {
-  rm -rf /tmp/go1.18.3.linux-amd64.tar.gz $HOME/go/go1.18.3 # clean up
+  rm -rf /tmp/go1.20.3.linux-amd64.tar.gz $HOME/go/go1.20.3 # clean up
 
-  # 1. 下载 go1.18.3 版本的 Go 安装包
-  wget -P /tmp/ https://golang.google.cn/dl/go1.18.3.linux-amd64.tar.gz
+  # 1. 下载 go1.20.3 版本的 Go 安装包
+  wget -P /tmp/ https://golang.google.cn/dl/go1.20.3.linux-amd64.tar.gz
 
   # 2. 安装 Go
   mkdir -p $HOME/go
-  tar -xvzf /tmp/go1.18.3.linux-amd64.tar.gz -C $HOME/go
-  mv $HOME/go/go $HOME/go/go1.18.3
+  tar -xvzf /tmp/go1.20.3.linux-amd64.tar.gz -C $HOME/go
+  mv $HOME/go/go $HOME/go/go1.20.3
 
   # 3. 配置 Go 环境变量
   cat << 'EOF' >> $HOME/.bashrc
 # Go envs
-export GOVERSION=go1.18.3 # Go 版本设置
+export GOVERSION=go1.20.3 # Go 版本设置
 export GO_INSTALL_DIR=$HOME/go # Go 安装目录
 export GOROOT=$GO_INSTALL_DIR/$GOVERSION # GOROOT 设置
 export GOPATH=$WORKSPACE/golang # GOPATH 设置
