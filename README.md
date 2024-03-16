@@ -89,6 +89,14 @@ jobs:
         run: cld
 ```
 
+Or use actions:
+
+```yaml
+- name: Code Language Detector
+  uses: kubecub/comment-lang-detector@v1.0.0
+```
+
+
 This workflow triggers on both push events and pull requests. It checks out the code, sets up the Go environment, installs the Comment Language Detector, and runs it against the codebase according to the specified configuration.
 
 ### Conclusion
