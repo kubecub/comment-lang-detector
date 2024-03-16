@@ -2,7 +2,7 @@
 # Licensed under the MIT License (the "License");
 # you may not use this file except in compliance with the License.
 
-name: Github labels syncer release
+name: Comment Lang Detector Release Version
 
 on:
   push:
