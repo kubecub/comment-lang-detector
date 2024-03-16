@@ -175,20 +175,6 @@ changelog:
 # docker_signs:
 
 
-kos:
-  - repository: ghcr.io/kubecub/cld
-    id: cld
-    tags:
-    - '{{.Version}}'
-    - latest
-    bare: true
-    main: ./cmd/cld/main.go
-    base_image: alpine
-    preserve_import_paths: false
-    platforms:
-    - linux/amd64
-    - linux/arm64
-
 # .goreleaser.yaml
 milestones:
   # You can have multiple milestone configs
