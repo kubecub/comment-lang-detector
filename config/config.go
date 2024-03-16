@@ -16,7 +16,7 @@ package config
 
 import (
 	"flag"
-	"log"
+	"fmt"
 	"os"
 
 	"gopkg.in/yaml.v2"
@@ -30,20 +30,36 @@ type Config struct {
 
 func ParseConfig() (Config, error) {
 	var configPath string
-	flag.StringVar(&configPath, "config", "./", "Path to config file")
+	flag.StringVar(&configPath, "config", "", "Path to config file")
 	flag.Parse()
 
-	var config Config
-	if configPath != "" {
-		configFile, err := os.ReadFile(configPath)
-		if err != nil {
-			return Config{}, err
-		}
-		if err := yaml.Unmarshal(configFile, &config); err != nil {
-			return Config{}, err
-		}
-	} else {
-		log.Fatal("Config file must be provided")
+	if configPath == "" {
+		configPath = os.Getenv("CLD_CONFIG_PATH")
 	}
+
+	if configPath == "" {
+		defaultPaths := []string{"config.yaml", ".github/code-language-detector.yml"}
+		for _, path := range defaultPaths {
+			if _, err := os.Stat(path); err == nil {
+				configPath = path
+				break
+			}
+		}
+	}
+
+	if configPath == "" {
+		return Config{}, fmt.Errorf("config file not found")
+	}
+
+	configFile, err := os.ReadFile(configPath)
+	if err != nil {
+		return Config{}, err
+	}
+
+	var config Config
+	if err := yaml.Unmarshal(configFile, &config); err != nil {
+		return Config{}, err
+	}
+
 	return config, nil
 }

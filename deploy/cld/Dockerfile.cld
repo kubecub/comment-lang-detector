@@ -10,4 +10,4 @@ RUN cd /app; go build -o _output/bin/cld cmd/cld/main.go
 
 FROM scratch
 COPY --from=builder /app/_output/bin/cld /app
-ENTRYPOINT ["/app/cld --help"]
+ENTRYPOINT ["/app/cld"]

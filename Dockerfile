@@ -18,6 +18,5 @@ FROM alpine:latest
 WORKDIR /app
 
 COPY --from=builder /build/_output/bin/platforms/linux/amd64/cld .
-COPY --from=builder /build/config.yaml .
 
-ENTRYPOINT ["./cld", "-config", "config.yaml"]
+ENTRYPOINT ["./cld"]
