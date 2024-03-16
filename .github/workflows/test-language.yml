@@ -1,4 +1,4 @@
-name: Language Check Workflow
+name: Language Check Workflow Test
 
 on: [push, pull_request]
 
